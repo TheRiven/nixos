@@ -16,6 +16,8 @@
         vivaldi # Browser
         lmms # DAW
         qmmp # Music Player
+        fastfetch # Fastfetch cli tool
+        helix # CLI code/text editor
     ];
 
     # Install firefox.
