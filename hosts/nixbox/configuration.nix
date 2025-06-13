@@ -77,6 +77,7 @@
     isNormalUser = true;
     description = "James";
     extraGroups = [ "networkmanager" "wheel" ];
+    shell = pkgs.fish;
     #packages = with pkgs; [];
   };
 
