@@ -18,6 +18,7 @@
         qmmp # Music Player
         fastfetch # Fastfetch cli tool
         helix # CLI code/text editor
+        alacritty # alacritty terminal emulator
     ];
 
     # Install firefox.
