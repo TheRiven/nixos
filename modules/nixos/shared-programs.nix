@@ -18,6 +18,7 @@
         qmmp # Music Player
         fastfetch # Fastfetch cli tool
         helix # CLI code/text editor
+        lazygit # TUI Git client
         alacritty # alacritty terminal emulator
     ];
 
