@@ -1,5 +1,8 @@
 
-{pkgs, ...}:
+{
+    pkgs,
+    ...
+}:
 
 {
     # Allow unfree packages

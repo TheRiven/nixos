@@ -13,6 +13,7 @@
         ./hosts/nixbox/configuration.nix
         ./modules/locals.nix
         ./modules/programs.nix
+        ./modules/users.nix
       ];
     };
   };

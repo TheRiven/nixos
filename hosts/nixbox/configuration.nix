@@ -2,13 +2,17 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, inputs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      #inputs.home-manager.nixosModules.default
     ];
 
   # Bootloader.
@@ -71,23 +75,6 @@
   nix.gc.automatic = true;
   nix.gc.dates = "07:00";
   nix.gc.options = "--delete-older-than 5d";
-
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.riven = {
-    isNormalUser = true;
-    description = "James";
-    extraGroups = [ "networkmanager" "wheel" ];
-    shell = pkgs.fish;
-    #packages = with pkgs; [];
-  };
-
-  #home-manager = {
-  #  # Pass inputs to home manager modules
-  #  specialArgs = {inherit inputs; };
-  #  users = {
-  #    "riven" = import ./home.nix;
-  #  };
-  #};
 
   # List services that you want to enable:
 
