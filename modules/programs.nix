@@ -5,6 +5,10 @@
 }:
 
 {
+    imports = [
+        ./vivaldi.nix
+    ];
+
     # Allow unfree packages
     nixpkgs.config.allowUnfree = true;
 
@@ -16,7 +20,7 @@
         kdePackages.kpat # Solitair card games
         kdePackages.kate # Code editor
         nil # Nix language LSP for kate
-        vivaldi # Browser
+        #vivaldi # Browser
         lmms # DAW
         qmmp # Music Player
         fastfetch # Fastfetch cli tool
@@ -26,7 +30,8 @@
     ];
 
     # Install firefox.
-    #programs.firefox.enable = true;
+    programs.firefox.enable = true;
+    vivaldi.enable = true;
 
     # Git
     programs.git = {
@@ -44,8 +49,8 @@
     # started in user sessions.
 
     # Enable vivaldi plasma connect with chromium
-    programs.chromium.enable = true;
-    programs.chromium.enablePlasmaBrowserIntegration = true;
+    #programs.chromium.enable = true;
+    #programs.chromium.enablePlasmaBrowserIntegration = true;
 
     # programs.mtr.enable = true;
     # programs.gnupg.agent = {
