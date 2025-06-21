@@ -20,7 +20,6 @@
         kdePackages.kpat # Solitair card games
         kdePackages.kate # Code editor
         nil # Nix language LSP for kate
-        #vivaldi # Browser
         lmms # DAW
         qmmp # Music Player
         fastfetch # Fastfetch cli tool
@@ -47,10 +46,6 @@
 
     # Some programs need SUID wrappers, can be configured further or are
     # started in user sessions.
-
-    # Enable vivaldi plasma connect with chromium
-    #programs.chromium.enable = true;
-    #programs.chromium.enablePlasmaBrowserIntegration = true;
 
     # programs.mtr.enable = true;
     # programs.gnupg.agent = {
