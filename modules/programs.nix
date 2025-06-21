@@ -30,7 +30,7 @@
     ];
 
     # Install firefox.
-    programs.firefox.enable = true;
+    #programs.firefox.enable = true;
     vivaldi.enable = true;
 
     # Git
