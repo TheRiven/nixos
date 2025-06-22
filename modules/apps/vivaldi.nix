@@ -8,10 +8,10 @@
 
 {
     options = {
-        vivaldi.enable = lib.mkEnableOption "enables vivaldi";
+        apps.vivaldi.enable = lib.mkEnableOption "enables vivaldi";
     };
 
-    config = lib.mkIf config.vivaldi.enable {
+    config = lib.mkIf config.apps.vivaldi.enable {
         environment.systemPackages = with pkgs; [
             vivaldi
         ];
