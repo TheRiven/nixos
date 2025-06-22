@@ -16,9 +16,9 @@
     # $ nix search wget
 
     environment.systemPackages = with pkgs; [
-        kdePackages.filelight # Disk filesize tool
-        kdePackages.kpat # Solitair card games
-        kdePackages.kate # Code editor
+        #kdePackages.filelight # Disk filesize tool
+        #kdePackages.kpat # Solitair card games
+        #kdePackages.kate # Code editor
         nil # Nix language LSP for kate
         lmms # DAW
         qmmp # Music Player
@@ -31,6 +31,7 @@
     # Install firefox.
     #programs.firefox.enable = true;
     apps.vivaldi.enable = true;
+    apps.kde.enable = true;
 
     # Git
     programs.git = {
