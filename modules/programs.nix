@@ -6,7 +6,7 @@
 
 {
     imports = [
-        ./vivaldi.nix
+        ./apps/vivaldi.nix
     ];
 
     # Allow unfree packages
@@ -30,7 +30,7 @@
 
     # Install firefox.
     #programs.firefox.enable = true;
-    vivaldi.enable = true;
+    apps.vivaldi.enable = true;
 
     # Git
     programs.git = {
