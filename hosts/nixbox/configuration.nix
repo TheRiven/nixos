@@ -15,6 +15,9 @@
       ./hardware-configuration.nix
     ];
 
+
+  ## --- CORE --- ##
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -23,20 +26,33 @@
   #boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.kernelPackages = pkgs.linuxPackages;
 
+  ## --- NETWORK --- ##
+
   networking.hostName = "nixbox"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Enable networking
   networking.networkmanager.enable = true;
+  
+  # Enable the OpenSSH daemon.
+  # services.openssh.enable = true;
 
-  # Enable the X11 windowing system.
-  # You can disable this if you're only using the Wayland session.
-  services.xserver.enable = true;
+  # Open ports in the firewall.
+  # networking.firewall.allowedTCPPorts = [ ... ];
+  # networking.firewall.allowedUDPPorts = [ ... ];
+  # Or disable the firewall altogether.
+  # networking.firewall.enable = false;
+
+  ## --- DESKTOP ENV --- ##
 
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
-
+  
+  # Enable the X11 windowing system.
+  # You can disable this if you're only using the Wayland session.
+  services.xserver.enable = true;
+  
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "gb";
@@ -45,6 +61,8 @@
 
   # Configure console keymap
   console.keyMap = "uk";
+
+  ## --- SERVICES -- ##
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -68,6 +86,8 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
+  ## --- NIX --- ##
+
   # Actiate Nix Flakes
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
@@ -76,16 +96,13 @@
   nix.gc.dates = "07:00";
   nix.gc.options = "--delete-older-than 5d";
 
-  # List services that you want to enable:
+  ## --- APPS --- ##
+    
+  # Set apps to enable on host
+  #programs.firefox.enable = true;
+  apps.vivaldi.enable = true;
+  apps.kde.enable = true;
 
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
-
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
 
   # Initial NixOS version -- DO NOT CHANGE
   system.stateVersion = "25.05";

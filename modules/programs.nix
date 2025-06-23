@@ -28,11 +28,6 @@
         alacritty # alacritty terminal emulator
     ];
 
-    # Install firefox.
-    #programs.firefox.enable = true;
-    apps.vivaldi.enable = true;
-    apps.kde.enable = true;
-
     # Git
     programs.git = {
         enable = true;
