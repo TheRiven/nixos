@@ -17,10 +17,7 @@
     # $ nix search wget
 
     environment.systemPackages = with pkgs; [
-        #kdePackages.filelight # Disk filesize tool
-        #kdePackages.kpat # Solitair card games
-        #kdePackages.kate # Code editor
-        nil # Nix language LSP for kate
+        nil # Nix language LSP server
         lmms # DAW
         qmmp # Music Player
         fastfetch # Fastfetch cli tool
