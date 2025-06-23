@@ -7,6 +7,7 @@
 {
     imports = [
         ./apps/vivaldi.nix
+        ./apps/kde.nix
     ];
 
     # Allow unfree packages
