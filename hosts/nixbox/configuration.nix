@@ -84,6 +84,8 @@
     #media-session.enable = true;
   };
 
+  # services.jellyfin.enable = true;
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 

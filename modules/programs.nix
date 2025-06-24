@@ -24,6 +24,7 @@
         helix # CLI code/text editor
         lazygit # TUI Git client
         alacritty # alacritty terminal emulator
+        yt-dlp # Video downloader
     ];
 
     # Git
