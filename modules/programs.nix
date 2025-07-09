@@ -21,6 +21,7 @@
         lmms # DAW
         qmmp # Music Player
         fastfetch # Fastfetch cli tool
+        bat # Better version of Cat
         helix # CLI code/text editor
         lazygit # TUI Git client
         alacritty # alacritty terminal emulator
@@ -35,6 +36,9 @@
             user.email = "novajames276@gmail.com";
         };
     };
+
+    # Nix Helper (NH)
+    programs.nh.enable = true;
 
     # Install fish shell
     programs.fish.enable = true;
