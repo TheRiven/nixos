@@ -7,24 +7,26 @@
   };
 
   outputs = { self, nixpkgs, ... }@inputs: {
-    nixosConfigurations.nixbox = nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit inputs;};
-      modules = [
-        ./hosts/nixbox/configuration.nix
-        ./modules/locals.nix
-        ./modules/programs.nix
-        ./modules/users.nix
-      ];
-    };
+    nixosConfigurations = {
+      nixbox = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs;};
+        modules = [
+          ./hosts/nixbox/configuration.nix
+          ./modules/locals.nix
+          ./modules/programs.nix
+          ./modules/users.nix
+        ];
+      };
 
-    nixosConfigurations.nixtop = nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit inputs;};
-      modules = [
-        ./hosts/nixtop/configuration.nix
-        ./modules/locals.nix
-        ./modules/programs.nix
-        ./modules/users.nix
-      ];
+      nixtop = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs;};
+        modules = [
+          ./hosts/nixtop/configuration.nix
+          ./modules/locals.nix
+          ./modules/programs.nix
+          ./modules/users.nix
+        ];
+      };
     };
   };
 }
