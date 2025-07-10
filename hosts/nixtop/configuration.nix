@@ -68,6 +68,8 @@
   # Configure console keymap
   console.keyMap = "uk";
 
+  hardware.graphics.enable = true;
+  
   ## --- SERVICES -- ##
 
   # Enable CUPS to print documents.
