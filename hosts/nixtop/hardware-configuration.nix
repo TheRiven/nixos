@@ -13,6 +13,17 @@
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
 
+  fileSystems."/" =
+    { device = "/dev/disk/by-uuid/3e38d868-4e6f-4158-ad18-32976ce48017";
+      fsType = "btrfs";
+    };
+
+  fileSystems."/boot" =
+    { device = "/dev/disk/by-uuid/1A69-5F68";
+      fsType = "vfat";
+      options = [ "fmask=0022" "dmask=0022" ];
+    };
+
   swapDevices =
     [ { device = "/dev/disk/by-uuid/08169cf8-5af6-4175-82d7-4ecc011d8c58"; }
     ];
