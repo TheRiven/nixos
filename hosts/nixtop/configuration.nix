@@ -109,7 +109,7 @@
   ## --- APPS --- ##
     
   # Set apps to enable on host
-  #programs.firefox.enable = true;
+  programs.firefox.enable = true;
   programs.nix-ld.enable = true; # Enables nix dynamic linker
   apps.vivaldi.enable = true;
   apps.kde.enable = true;
