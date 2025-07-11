@@ -71,7 +71,7 @@
   # Graphics Card settings
   hardware.graphics.enable = true;
   hardware.nvidia.open = false;
-  hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_340;
+  hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_390;
   services.xserver.videoDrivers = ["nvidia"];
   
   ## --- SERVICES -- ##
