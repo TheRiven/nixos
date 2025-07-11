@@ -68,7 +68,11 @@
   # Configure console keymap
   console.keyMap = "uk";
 
+  # Graphics Card settings
   hardware.graphics.enable = true;
+  hardware.nvidia.open = false;
+  hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_340;
+  services.xserver.videoDrivers = ["nvidia"];
   
   ## --- SERVICES -- ##
 
