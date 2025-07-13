@@ -25,6 +25,7 @@
             wl-clipboard # Copy/Paste functions - Sway
             mako # Notification system - Sway
             seahorse # gnome-keyring credentials manager
+            xfce.thunar # File manager
         ];
     };
 
