@@ -27,9 +27,7 @@
         alacritty # alacritty terminal emulator
         yt-dlp # Video downloader
         btop # System monitor
-        slurp # Screenshots - Sway
-        wl-clipboard # Copy/Paste functions - Sway
-        mako # Notification system - Sway
+        geany # Lightweight IDE
     ];
 
     # Git
