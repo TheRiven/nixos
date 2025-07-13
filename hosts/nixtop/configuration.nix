@@ -25,7 +25,6 @@
   # Bootloader.
   #boot.loader.systemd-boot.enable = true;
   boot.loader.grub.enable = true;
-  boot.loader.grub.version = 2;
   boot.loader.grub.device = "/dev/sda";
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -119,6 +118,7 @@
   # Set apps to enable on host
   programs.firefox.enable = true;
   programs.nix-ld.enable = true; # Enables nix dynamic linker
+  programs.steam.enable = true;
   apps.vivaldi.enable = true;
   apps.kde.enable = true;
 
