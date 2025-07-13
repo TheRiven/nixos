@@ -27,7 +27,6 @@
         alacritty # alacritty terminal emulator
         yt-dlp # Video downloader
         btop # System monitor
-        geany # Lightweight IDE
     ];
 
     # Git
@@ -38,6 +37,9 @@
             user.email = "novajames276@gmail.com";
         };
     };
+
+    # TUI Git Client
+    programs.lazygit.enable = true;
 
     # Nix Helper (NH)
     programs.nh.enable = true;
