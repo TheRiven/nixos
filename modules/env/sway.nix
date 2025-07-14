@@ -27,6 +27,7 @@
             slurp # Screenshots - Sway
             wl-clipboard # Copy/Paste functions - Sway
             mako # Notification system - Sway
+            wofi # Alternative Program launcher
         ];
     };
 
