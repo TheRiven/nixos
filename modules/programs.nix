@@ -8,6 +8,7 @@
     imports = [
         ./apps/vivaldi.nix
         ./apps/kde.nix
+        ./apps/discord.nix
     ];
 
     # Allow unfree packages

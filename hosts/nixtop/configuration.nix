@@ -121,6 +121,7 @@
   programs.steam.enable = true;
   apps.vivaldi.enable = true;
   apps.kde.enable = true;
+  apps.discord.enable = true;
 
 
   # Initial NixOS version -- DO NOT CHANGE
