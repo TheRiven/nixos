@@ -34,8 +34,15 @@
             wl-clipboard # Copy/Paste functions - Sway
             mako # Notification system - Sway
             wofi # Alternative Program launcher
-            font-awesome # Awesome OTF font
         ];
+
+        fonts = {
+            packages = with pkgs; [
+                font-awesome
+                noto-fonts 
+            ];
+        };
+        
     };
 
 }
