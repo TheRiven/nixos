@@ -25,11 +25,16 @@
 
         services.gnome.gnome-keyring.enable = true;
 
+        security.pam.loginLimits = [
+          { domain = "@users"; item = "rtprio"; type = "-"; value = 1; }  
+        ];
+
         environment.systemPackages = with pkgs; [
             slurp # Screenshots - Sway
             wl-clipboard # Copy/Paste functions - Sway
             mako # Notification system - Sway
             wofi # Alternative Program launcher
+            font-awesome # Awesome OTF font
         ];
     };
 
