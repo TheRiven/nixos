@@ -20,6 +20,8 @@
 
         programs.thunar.enable = true; # File Manager
         programs.seahorse.enable = true; # Gnome Keyring GUI
+        programs.waybar.enable = true; # Waybar!
+        programs.nm-applet.enable = true; # GUI app for Networkmanager
 
         services.gnome.gnome-keyring.enable = true;
 
