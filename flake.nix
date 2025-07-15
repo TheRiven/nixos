@@ -24,6 +24,7 @@
         ./modules/locals.nix
         ./modules/programs.nix
         ./modules/users.nix
+        ./modules/env/sway.nix
       ];
     };
 
