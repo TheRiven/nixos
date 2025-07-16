@@ -25,6 +25,8 @@
 
         #services.gnome.gnome-keyring.enable = true;
 
+        security.pam.services.user.kwallet.enable = true;
+
         services.greetd = {
             enable = true;
             settings = {
