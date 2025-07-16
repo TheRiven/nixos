@@ -28,6 +28,7 @@
         alacritty # alacritty terminal emulator
         yt-dlp # Video downloader
         btop # System monitor
+        gimp3 # GIMP image editor
     ];
 
     # Git
