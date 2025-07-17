@@ -24,7 +24,6 @@
         #programs.nm-applet.enable = true; # GUI app for Networkmanager
 
         services.gnome.gnome-keyring.enable = true;
-        services.secret-service.enable = true;
 
         #security.pam.services.login.kwallet.enable = true;
         security.pam.services.login.enableGnomeKeyring = true;
