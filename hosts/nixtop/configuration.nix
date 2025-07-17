@@ -70,7 +70,7 @@
   hardware.graphics.enable = true;
   hardware.nvidia.open = false;
   nixpkgs.config.nvidia.acceptLicense = true;
-  hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_390;
+  hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_340;
   services.xserver.videoDrivers = ["nvidia"];
   
   ## --- SERVICES -- ##
