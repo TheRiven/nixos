@@ -19,6 +19,7 @@
 
     environment.systemPackages = with pkgs; [
         nil # Nix language LSP server
+        ols # Odin Languge LSP server
         lmms # DAW
         qmmp # Music Player
         fastfetch # Fastfetch cli tool
@@ -29,6 +30,7 @@
         yt-dlp # Video downloader
         btop # System monitor
         gimp3 # GIMP image editor
+        odin # Odin Programing language
     ];
 
     # Git
