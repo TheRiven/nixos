@@ -72,6 +72,7 @@
   nixpkgs.config.nvidia.acceptLicense = true;
   hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_340;
   services.xserver.videoDrivers = ["nvidia"];
+  nixpkgs.config.allowBroken = true;
   
   ## --- SERVICES -- ##
 
