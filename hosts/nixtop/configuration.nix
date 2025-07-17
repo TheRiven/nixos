@@ -13,10 +13,6 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      # ../../modules/env/sway.nix
-      #../../modules/programs.nix
-      #../../modules/locals.nix
-      #../../modules/users.nix
     ];
 
 
@@ -73,7 +69,7 @@
   # Graphics Card settings
   hardware.graphics.enable = true;
   #hardware.nvidia.open = false;
-  # nixpkgs.config.nvidia.acceptLicense = true;
+  #nixpkgs.config.nvidia.acceptLicense = true;
   #hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_390;
   #services.xserver.videoDrivers = ["nvidia"];
   
@@ -116,7 +112,7 @@
   ## --- APPS --- ##
     
   # Set apps to enable on host
-  programs.firefox.enable = true;
+  #programs.firefox.enable = true;
   programs.nix-ld.enable = true; # Enables nix dynamic linker
   programs.steam.enable = true;
   apps.vivaldi.enable = true;
