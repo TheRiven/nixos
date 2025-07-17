@@ -16,17 +16,21 @@
         programs.sway = {
             enable = true;
             wrapperFeatures.gtk = true;
+            extraOptions = [
+                "--unsupported-gpu"
+            ];
         };
 
         programs.thunar.enable = true; # File Manager
-        programs.seahorse.enable = true; # Gnome Keyring GUI
+        #programs.seahorse.enable = true; # Gnome Keyring GUI
         programs.waybar.enable = true; # Waybar!
         #programs.nm-applet.enable = true; # GUI app for Networkmanager
 
-        services.gnome.gnome-keyring.enable = true;
+        #services.gnome.gnome-keyring.enable = true;
+        services.passSecretService.enable = true;
 
         #security.pam.services.login.kwallet.enable = true;
-        security.pam.services.login.enableGnomeKeyring = true;
+        #security.pam.services.login.enableGnomeKeyring = true;
 
         #services.greetd = {
         #    enable = true;
