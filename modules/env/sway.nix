@@ -24,7 +24,6 @@
         programs.thunar.enable = true; # File Manager
         programs.seahorse.enable = true; # Gnome Keyring GUI
         programs.waybar.enable = true; # Waybar!
-        #programs.nm-applet.enable = true; # GUI app for Networkmanager
 
         programs.uwsm = {
             enable = true;
@@ -39,12 +38,12 @@
         };
 
         services.gnome.gnome-keyring.enable = true;
-        #services.passSecretService.enable = true;
 
         #security.pam.services.login.kwallet.enable = true;
         #security.pam.services.login.enableGnomeKeyring = true;
 
-        services.displayManager.sddm.enable = true;
+        #services.displayManager.sddm.enable = true;
+        services.xserver.displayManager.gdm.enable = true;
 
         #services.greetd = {
         #    enable = true;
@@ -54,20 +53,6 @@
         #            user = "greeter";
         #        };
         #    };
-        #};
-
-        #services.mpd = {
-        #    enable = true;
-        #    musicDirectory = "~/Music";
-        #    extraConfig = ''
-        #        audio_output {
-        #            type "alsa"
-        #            name "ALSA"
-        #            mixer_type "hardware"
-        #            mixer_device "default"
-        #            mixer_control "PCM"
-        #        }
-        #    '';
         #};
 
         security.pam.loginLimits = [
