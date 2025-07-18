@@ -44,6 +44,8 @@
         #security.pam.services.login.kwallet.enable = true;
         #security.pam.services.login.enableGnomeKeyring = true;
 
+        services.displayManager.sddm.enable = true;
+
         #services.greetd = {
         #    enable = true;
         #    settings = {
