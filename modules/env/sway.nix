@@ -42,8 +42,9 @@
         #security.pam.services.login.kwallet.enable = true;
         #security.pam.services.login.enableGnomeKeyring = true;
 
-        #services.displayManager.sddm.enable = true;
-        services.xserver.displayManager.gdm.enable = true;
+        services.displayManager.sddm.enable = true;
+        services.displayManager.sddm.wayland.enable = true;
+        #services.xserver.displayManager.gdm.enable = true;
 
         #services.greetd = {
         #    enable = true;
@@ -73,7 +74,10 @@
         fonts = {
             packages = with pkgs; [
                 font-awesome
-                noto-fonts 
+                noto-fonts
+                noto-fonts-cjk
+                noto-fonts-emoji
+                dejavu_fonts 
             ];
         };
         
