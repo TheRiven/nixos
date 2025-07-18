@@ -28,6 +28,10 @@
   #boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.kernelPackages = pkgs.linuxPackages;
 
+  boot.kernelParams = [
+    "nouveau.config=PGRAPH=0"
+  ];
+
   ## --- NETWORK --- ##
 
   networking.hostName = "nixtop"; # Define your hostname.
