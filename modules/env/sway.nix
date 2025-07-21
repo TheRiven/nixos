@@ -24,6 +24,7 @@
         programs.thunar.enable = true; # File Manager
         programs.seahorse.enable = true; # Gnome Keyring GUI
         programs.waybar.enable = true; # Waybar!
+        programs.nm-applet.enable = true;
 
         programs.uwsm = {
             enable = true;
@@ -38,8 +39,6 @@
         };
 
         services.gnome.gnome-keyring.enable = true;
-
-        #security.pam.services.login.kwallet.enable = true;
         #security.pam.services.login.enableGnomeKeyring = true;
 
         services.displayManager.sddm.enable = true;
@@ -65,9 +64,6 @@
             wl-clipboard # Copy/Paste functions - Sway
             mako # Notification system - Sway
             wofi # Alternative Program launcher
-            #kdePackages.kwallet # Password locker
-            #kdePackages.kwallet-pam # Pam Kwallet integration
-            #kdePackages.kwalletmanager # Kwallet manager
             cmus # console music player
         ];
 
