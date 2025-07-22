@@ -30,6 +30,7 @@
         btop # System monitor
         gimp3 # GIMP image editor
         odin # Odin Programing language
+        astroterm # Celestial viewer
     ];
 
     # Git

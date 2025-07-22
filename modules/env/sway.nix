@@ -22,6 +22,7 @@
         };
 
         programs.thunar.enable = true; # File Manager
+        programs.yazi.enable = true; # Yazi file manager
         programs.seahorse.enable = true; # Gnome Keyring GUI
         programs.waybar.enable = true; # Waybar!
         programs.nm-applet.enable = true; # Connects networkmanager to gnome keyring
