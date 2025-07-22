@@ -11,9 +11,7 @@
       specialArgs = {inherit inputs;};
       modules = [
         ./hosts/nixbox/configuration.nix
-        ./modules/locals.nix
-        ./modules/programs.nix
-        ./modules/users.nix
+        ./modules/default-modules.nix
       ];
     };
 
@@ -21,9 +19,7 @@
       specialArgs = {inherit inputs;};
       modules = [
         ./hosts/nixtop/configuration.nix
-        ./modules/locals.nix
-        ./modules/programs.nix
-        ./modules/users.nix
+        ./modules/default-modules.nix
         ./modules/env/sway.nix
       ];
     };
