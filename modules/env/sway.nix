@@ -56,6 +56,7 @@
             mako # Notification system - Sway
             wofi # Alternative Program launcher
             cmus # console music player
+            vivaldi # browser
         ];
 
         fonts = {
