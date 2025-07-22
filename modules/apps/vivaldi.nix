@@ -9,15 +9,26 @@
 {
     options = {
         apps.vivaldi.enable = lib.mkEnableOption "enables vivaldi";
+        apps.vivaldi.plasma = lib.mkEnableOption "enables Vivaldi KDE plasma setup";
     };
+    
+    config = let
+        vivaldiConfig = {
+            enable = config.apps.vivaldi.enable;
+            plasma = config.apps.vivaldi.plasma;
+        };
 
-    config = lib.mkIf config.apps.vivaldi.enable {
-        environment.systemPackages = with pkgs; [
-            vivaldi
-        ];
+    in
+    {     
+         lib.mkIf = vivaldiConfig.enable  {
+             environment.systemPackages = with pkgs; [
+                 vivaldi
+             ];
 
-        # Enable vivaldi plasma connect with chromium
-        programs.chromium.enable = true;
-        programs.chromium.enablePlasmaBrowserIntegration = true;
-    };
+             # Enable vivaldi plasma connect with chromium
+             programs.chromium.enable = vivaldiConfig.plasma;
+             programs.chromium.enablePlasmaBrowserIntegration = vivaldiConfig.plasma;
+        };
+    };  
+        
 }
