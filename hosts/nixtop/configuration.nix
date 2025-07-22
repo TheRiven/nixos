@@ -118,10 +118,8 @@
   ## --- APPS --- ##
     
   # Set apps to enable on host
-  #programs.firefox.enable = true;
   programs.nix-ld.enable = true; # Enables nix dynamic linker
   programs.steam.enable = true;
-  apps.vivaldi.enable = true;
   apps.kde.enable = true;
   apps.discord.enable = true;
 

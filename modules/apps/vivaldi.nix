@@ -20,7 +20,7 @@
 
     in
     {     
-         lib.mkIf = vivaldiConfig.enable  {
+         lib.mkIf = config.apps.vivaldi.enable  {
              environment.systemPackages = with pkgs; [
                  vivaldi
              ];
