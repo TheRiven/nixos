@@ -24,8 +24,9 @@
         programs.thunar.enable = true; # File Manager
         programs.seahorse.enable = true; # Gnome Keyring GUI
         programs.waybar.enable = true; # Waybar!
-        programs.nm-applet.enable = true;
+        programs.nm-applet.enable = true; # Connects networkmanager to gnome keyring
 
+        # Wrap Sway to hopefully make apps play nice together
         programs.uwsm = {
             enable = true;
             waylandCompositors = {
@@ -38,24 +39,14 @@
 
         };
 
-        services.gnome.gnome-keyring.enable = true;
-        #security.pam.services.login.enableGnomeKeyring = true;
+        services.gnome.gnome-keyring.enable = true; # Password Keyring
 
-        services.displayManager.sddm.enable = true;
-        services.displayManager.sddm.wayland.enable = true;
-        #services.xserver.displayManager.gdm.enable = true;
+        services.displayManager.sddm.enable = true; # greeter with UWSM support
+        services.displayManager.sddm.wayland.enable = true; # Set SDDM to wayland?
 
-        #services.greetd = {
-        #    enable = true;
-        #    settings = {
-        #        default_session = {
-        #            command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd sway";
-        #            user = "greeter";
-        #        };
-        #    };
-        #};
-
-        security.pam.loginLimits = [
+        
+        # Give apps the ability to run in realtime - helpful when busy?
+        security.pam.loginLimits = [ 
           { domain = "@users"; item = "rtprio"; type = "-"; value = 1; }  
         ];
 
