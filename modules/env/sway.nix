@@ -30,7 +30,10 @@
         programs.yazi = {
             enable = true;
             settings.yazi = {
-                mgr = "show hidden = true";                                
+                tomlString  = ''
+                    [mgr]
+                    show_hidden = true
+                '';                                
             };  
         };
         
