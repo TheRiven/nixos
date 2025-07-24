@@ -25,18 +25,8 @@
         programs.seahorse.enable = true; # Gnome Keyring GUI
         programs.waybar.enable = true; # Waybar!
         programs.nm-applet.enable = true; # Connects networkmanager to gnome keyring
-
-        # YAZI File Manager
-        programs.yazi = {
-            enable = true;
-            settings.yazi = {
-                tomlString  = ''
-                    [mgr]
-                    show_hidden = true
-                '';                                
-            };  
-        };
-        
+        programs.yazi.enable = true; # YAZI File Manager
+                
         # Wrap Sway to hopefully make apps play nice together
         programs.uwsm = {
             enable = true;
