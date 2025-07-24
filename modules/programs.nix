@@ -19,6 +19,7 @@
     environment.systemPackages = with pkgs; [
         nil # Nix language LSP server
         ols # Odin Languge LSP server
+        taplo # TOML LSP
         lmms # DAW
         qmmp # Music Player
         fastfetch # Fastfetch cli tool
