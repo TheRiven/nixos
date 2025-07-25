@@ -70,6 +70,11 @@
                 nerd-fonts.noto
             ];
         };
+
+        # Stylix Theming for environment
+        stylix.enable = true;
+        stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark.yaml";
+        stylix.polarity = "dark"; 
         
     };
 
