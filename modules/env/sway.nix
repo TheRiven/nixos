@@ -65,7 +65,8 @@
             vivaldi # browser
             libreoffice-fresh # Libre Office
             hunspell # Spelling support
-            hunspellDicts.en_GB-large
+            hunspellDicts.en_GB-large # UK Dictionary
+            gnome-logs # Gnome journalD viewer
         ];
 
         fonts = {
