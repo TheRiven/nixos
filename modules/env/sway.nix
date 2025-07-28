@@ -40,9 +40,14 @@
 
         };
 
+        
+        # Core Services
         services.gnome.gnome-keyring.enable = true; # Password Keyring
         services.displayManager.sddm.enable = true; # greeter with UWSM support
         services.displayManager.sddm.wayland.enable = true; # Set SDDM to wayland?
+
+        # Extra Services
+        services.geoclue2.enable = true; # Location service
 
         
         # Give apps the ability to run in realtime - helpful when busy?
@@ -58,6 +63,8 @@
             gammastep # screen temp control
             cmus # console music player
             vivaldi # browser
+            libreoffice-fresh # Libre Office
+            hunspell
         ];
 
         fonts = {
