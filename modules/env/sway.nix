@@ -64,7 +64,8 @@
             cmus # console music player
             vivaldi # browser
             libreoffice-fresh # Libre Office
-            hunspell
+            hunspell # Spelling support
+            hunspellDicts.en_GB-large
         ];
 
         fonts = {
