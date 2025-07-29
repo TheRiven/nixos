@@ -32,7 +32,6 @@
         stylix.nixosModules.stylix
         ./hosts/nixtop/configuration.nix
         ./modules/default-modules.nix
-        ./modules/env/sway.nix
       ];
     };
 
