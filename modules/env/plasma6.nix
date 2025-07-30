@@ -22,8 +22,8 @@
         #services.geoclue2.enable = true; # Location service
 
         # Enable vivaldi plasma connect with chromium
-        #programs.chromium.enable = vivaldiConfig.plasma;
-        programs.chromium.enablePlasmaBrowserIntegration = vivaldiConfig.plasma;
+        #programs.chromium.enable = true;
+        programs.chromium.enablePlasmaBrowserIntegration = true;
 
 
         environment.systemPackages = with pkgs; [
