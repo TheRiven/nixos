@@ -1,7 +1,3 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
 {
   #config,
   pkgs,
@@ -13,9 +9,6 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      #../../modules/programs.nix
-      #../../modules/locals.nix
-      #../../modules/users.nix
     ];
 
 
@@ -32,19 +25,12 @@
   ## --- NETWORK --- ##
 
   networking.hostName = "nixbox"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Enable networking
   networking.networkmanager.enable = true;
   
   # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
-
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
+  services.openssh.enable = true;
 
   ## --- DESKTOP ENV --- ##
 
@@ -77,18 +63,10 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
     #jack.enable = true;
-
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
   };
 
   # services.jellyfin.enable = true;
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
 
   ## --- NIX --- ##
 
@@ -101,11 +79,8 @@
   nix.gc.options = "--delete-older-than 5d";
 
   ## --- APPS --- ##
-    
-  # Set apps to enable on host
-  #programs.firefox.enable = true;
+
   programs.nix-ld.enable = true; # Enables nix dynamic linker
-  apps.vivaldi.enable = true;
   apps.kde.enable = true;
 
 
