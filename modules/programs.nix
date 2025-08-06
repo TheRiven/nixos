@@ -25,13 +25,12 @@
         fastfetch # Fastfetch cli tool
         bat # Better version of Cat
         helix # CLI code/text editor
-        lazygit # TUI Git client
+        #lazygit # TUI Git client
         alacritty # alacritty terminal emulator
         yt-dlp # Video downloader
         btop # System monitor
         gimp3 # GIMP image editor
         odin # Odin Programing language
-        astroterm # Celestial viewer
     ];
 
     # Git
