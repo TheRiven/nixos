@@ -61,7 +61,6 @@
             mako # Notification system - Sway
             wofi # Alternative Program launcher
             gammastep # screen temp control
-            cmus # console music player
             vivaldi # browser
             libreoffice-fresh # Libre Office
             hunspell # Spelling support

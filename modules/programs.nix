@@ -21,7 +21,7 @@
         ols # Odin Languge LSP server
         taplo # TOML LSP
         lmms # DAW
-        qmmp # Music Player
+        cmus # console music player
         fastfetch # Fastfetch cli tool
         bat # Better version of Cat
         helix # CLI code/text editor
