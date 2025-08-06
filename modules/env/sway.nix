@@ -69,18 +69,6 @@
             gnome-logs # Gnome journalD viewer
         ];
 
-        fonts = {
-            packages = with pkgs; [
-                font-awesome
-                noto-fonts
-                noto-fonts-cjk-sans
-                noto-fonts-emoji
-                dejavu_fonts
-                nerd-fonts.iosevka-term
-                nerd-fonts.noto
-            ];
-        };
-
         # Stylix Theming for environment
         stylix.enable = true;
         stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark.yaml";
