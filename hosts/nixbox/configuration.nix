@@ -81,7 +81,6 @@
   ## --- APPS --- ##
 
   programs.nix-ld.enable = true; # Enables nix dynamic linker
-  apps.kde.enable = true;
 
 
   # Initial NixOS version -- DO NOT CHANGE
