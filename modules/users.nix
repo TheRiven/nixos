@@ -22,6 +22,7 @@
             gimp3 # GIMP image editor
             odin # Odin Programing language
             yt-dlp # Video downloader
+            bitwarden-desktop # bitwarden password manager
         ];
   };
 
