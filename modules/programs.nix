@@ -35,6 +35,12 @@
         };
     };
 
+    programs.chromium.extensions =
+    [
+        # Bitwarden extension
+        "nngceckbapebfimnlniiiahkandclblb"
+    ];
+
     # TUI Git Client
     programs.lazygit.enable = true;
 

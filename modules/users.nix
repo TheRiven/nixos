@@ -25,12 +25,6 @@
             bitwarden-desktop # bitwarden password manager
         ];
 
-        programs.chromium.extensions =
-        [
-            # Bitwarden extension
-            "nngceckbapebfimnlniiiahkandclblb"
-        ];
-
   };
 
 }
