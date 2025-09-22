@@ -16,6 +16,7 @@
             kdePackages.filelight # Disk filesize tool
             kdePackages.kpat # Solitair card games
             kdePackages.kate # Code editor
+            gedit # Text editor
             ols # Odin Languge LSP server
             taplo # TOML LSP
             lmms # DAW
