@@ -21,6 +21,7 @@
     nixosConfigurations.nixbox = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
+        stylix.nixosModules.stylix
         ./hosts/nixbox/configuration.nix
         ./modules/default-modules.nix
       ];
@@ -32,7 +33,6 @@
         stylix.nixosModules.stylix
         ./hosts/nixtop/configuration.nix
         ./modules/default-modules.nix
-        ./modules/env/sway.nix
       ];
     };
 

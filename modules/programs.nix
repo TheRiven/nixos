@@ -6,7 +6,7 @@
 
 {
     imports = [
-        ./apps/kde.nix
+        #./apps/kde.nix
         ./apps/discord.nix
     ];
 
@@ -18,20 +18,12 @@
 
     environment.systemPackages = with pkgs; [
         nil # Nix language LSP server
-        ols # Odin Languge LSP server
-        taplo # TOML LSP
-        lmms # DAW
-        qmmp # Music Player
+        cmus # console music player
         fastfetch # Fastfetch cli tool
         bat # Better version of Cat
         helix # CLI code/text editor
-        lazygit # TUI Git client
         alacritty # alacritty terminal emulator
-        yt-dlp # Video downloader
         btop # System monitor
-        gimp3 # GIMP image editor
-        odin # Odin Programing language
-        astroterm # Celestial viewer
     ];
 
     # Git
@@ -42,6 +34,12 @@
             user.email = "novajames276@gmail.com";
         };
     };
+
+    programs.chromium.extensions =
+    [
+        # Bitwarden extension
+        "nngceckbapebfimnlniiiahkandclblb"
+    ];
 
     # TUI Git Client
     programs.lazygit.enable = true;

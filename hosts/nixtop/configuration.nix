@@ -51,10 +51,6 @@
 
   ## --- DESKTOP ENV --- ##
 
-  # Enable the KDE Plasma Desktop Environment.
-  #services.displayManager.sddm.enable = true;
-  #services.desktopManager.plasma6.enable = true;
-
   env.sway.enable = true;
   
   # Enable the X11 windowing system.
@@ -92,12 +88,7 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
     #jack.enable = true;
-
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
   };
 
   # services.jellyfin.enable = true;
@@ -120,7 +111,6 @@
   # Set apps to enable on host
   programs.nix-ld.enable = true; # Enables nix dynamic linker
   programs.steam.enable = true;
-  apps.kde.enable = true;
   apps.discord.enable = true;
 
 
